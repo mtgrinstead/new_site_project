@@ -177,7 +177,7 @@ h4 {
  position: absolute;
   width: 100px;
   height: 100px;
-  left: 100px;
+  left: 110px;
   top: 100px;
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
@@ -199,7 +199,7 @@ h4 {
   position: relative;
   width: 84px;
   height: 53px;
-  left: 865px;
+  left: 795px;
   top: -500px;
   font-family: 'monospace';
   font-style: normal;
@@ -224,7 +224,7 @@ h4 {
   position: relative;
   width: 153px;
   height: 43px;
-  left: 770px;
+  left: 700px;
   top: -400px;
   font-family: 'monospace';
   font-style: normal;
@@ -249,7 +249,7 @@ h4 {
   position: relative;
   width: 181px;
   height: 63px;
-  left: 638px;
+  left: 568px;
   top: -300px;
   font-family: 'monospace';
   font-style: normal;
