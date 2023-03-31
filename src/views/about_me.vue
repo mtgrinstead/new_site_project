@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Hi, I'm Michael Grinstead</h1>
+    <h1>Hello.</h1>
     <p>I'm a security systems Project Manager, trying to transition into software development.
 With an electronics background, my analytical and problem-solving skills easily translate into programming. I have been self-learning Python, Go, and JavaScript,
 in my spare time, and I'm passionate about creating innovative software solutions that drive businesses forward. I'm versatile, adaptable, and comfortable working

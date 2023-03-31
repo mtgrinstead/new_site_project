@@ -15,13 +15,13 @@
 <!--  My goal is to make a positive impact on the industry and contribute to the creation of cutting-edge software solutions. I'm excited to grow and learn as a software-->
 <!--  developer, and I'm eager to take on new challenges and make a meaningful contribution to any development team.</p>-->
 
-  <button type ="submit"><img src="./assets/GitHub_logo.png" id="git_logo" alt="github logo"></button>
-  <button type ="submit"><img src="./assets/At_logo.png" id="at_logo" alt="at logo"></button>
-  <button type ="submit"><img src="./assets/LinkedIn_logo.png" id="LinkedIn_logo" alt="Linked In logo"></button>
-  <router-link to="/about_me"><button type ="submit"><img src="./assets/blue_logo.png" id="blue_logo" alt="MG logo"></button></router-link>
+  <img src="./assets/GitHub_logo.png" id="git_logo" alt="github logo">
+  <img src="./assets/At_logo.png" id="at_logo" alt="at logo">
+  <img src="./assets/LinkedIn_logo.png" id="LinkedIn_logo" alt="Linked In logo">
+  <router-link to="/about_me"><img src="./assets/blue_logo.png" id="blue_logo" alt="MG logo"></router-link>
   <router-link to="/blogs"><button type ="submit" id="blog">Blog</button></router-link>
   <router-link to="/projects"><button type ="submit" id="projects">Projects</button></router-link>
-  <router-link to="/languages"><button type ="submit" id="languages">Languages</button></router-link>
+    <router-link to="/languages" id="languages">Languages</router-link>
 
   <div class="text_box">
   <p> <RouterView /> </p>
@@ -36,6 +36,11 @@
 </template>
 
 <style>
+
+router-link {
+  text-decoration: none;
+}
+
 body {
   background-color: #002755;
 }
@@ -170,7 +175,15 @@ h4 {
   line-height: 49px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+#blog:visited {
+  color: black;
+}
+#blog:link {
+  color: black;
+}
+#blog:hover {
+  cursor: pointer;
+}
 #projects {
   background: none;
   border: none;
@@ -186,7 +199,15 @@ h4 {
   line-height: 49px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-
+#projects:visited {
+  color: black;
+}
+#projects:link {
+  color: black;
+}
+#projects:hover {
+  cursor: pointer;
+}
 
 #languages {
   background: none;
@@ -202,6 +223,17 @@ h4 {
   font-size: 36px;
   line-height: 49px;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-decoration: none;
+  color: black;
+}
+#languages:visited {
+  color: black;
+}
+#languages:link {
+  color: black;
+}
+#languages:hover {
+  cursor: pointer;
 }
 </style>
 
