@@ -4,9 +4,11 @@
 </script>
 
 <template>
-
-  <div class="bgwhite"></div>
+<div class="wrapper">
+<div class="bg">
   <div class="bggray"></div>
+  <div class="bgwhite"></div>
+</div>
   <h2>Michael Grinstead</h2>
 
 <!--  <p id="about_text">I'm Michael Grinstead, a security systems Project Manager, trying to transition into software development. With an electronics background, my analytical-->
@@ -21,7 +23,7 @@
   <router-link to="/about_me"><img src="./assets/blue_logo.png" id="blue_logo" alt="MG logo"></router-link>
   <router-link to="/blogs"><button type ="submit" id="blog">Blog</button></router-link>
   <router-link to="/projects"><button type ="submit" id="projects">Projects</button></router-link>
-    <router-link to="/languages" id="languages">Languages</router-link>
+  <router-link to="/languages" id="languages">Languages</router-link>
 
   <div class="text_box">
   <p> <RouterView /> </p>
@@ -31,12 +33,23 @@
 
       </nav>
 
-
-
+</div>
 </template>
 
 <style>
-
+.wrapper {
+position: absolute;
+top: 50%;
+left: 50%;
+margin-left: -535px;
+margin-top: -266px;
+}
+.bg {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 router-link {
   text-decoration: none;
 }
@@ -46,11 +59,11 @@ body {
 }
 
 h2 {
-  position: absolute;
+/*  position: absolute;*/
   width: 500px;
   height: 47px;
-  left: 380px;
-  top:  185px;
+/*  left: 380px;*/
+/*  top:  185px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
@@ -60,11 +73,11 @@ h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .text_box {
-  position: absolute;
+/*  position: absolute;*/
   width: 465px;
   height: 440px;
-  left: 650px;
-  top: 270px;
+/*  left: 650px;*/
+/*  top: 270px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
@@ -88,11 +101,11 @@ h2 {
 }
 
 h4 {
-  position: absolute;
+/*  position: absolute;*/
   width: 465px;
   height: 347px;
-  left: 650px;
-  top: 305px;
+/*  left: 650px;*/
+/*  top: 305px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
@@ -105,57 +118,58 @@ h4 {
   width: 1070px;
   height: 533px;
   content: none;
-  position: absolute;
-  left: 350px;
-  top: 200px;
+/*  position: absolute;*/
+/*  left: 350px;*/
+/*  top: 200px;*/
   background-color: #ffffff;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px;
   }
 
 .bggray {
   content: none;
-  position: absolute;
+  position: relative;
+
   width: 1070px;
   height: 62px;
-  left: 350px;
-  top: 200px;
+/*  left: 350px;*/
+  top: 10px;
   background-color: #5f5f5f;
-  border-radius: 10px 10px 0px 0px;
+  border-radius: 10px 10px 0 0;
   }
 
 #git_logo {
-  position: absolute;
+/*  position: absolute;*/
   width: 30px;
   height: 30px;
-  left: 1360px;
-  top: 215px;
+/*  left: 1360px;*/
+/*  top: 215px;*/
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #at_logo {
-  position: absolute;
+/*  position: absolute;*/
   width: 30px;
   height: 30px;
-  left: 1300px;
-  top: 215px;
+/*  left: 1300px;*/
+/*  top: 215px;*/
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #LinkedIn_logo {
-  position: absolute;
+/*  position: absolute;*/
   width: 30px;
   height: 30px;
-  left: 1240px;
-  top: 215px;
+/*  left: 1240px;*/
+/*  top: 215px;*/
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 #blue_logo {
-  position: absolute;
+/*  position: absolute;*/
   width: 100px;
   height: 100px;
-  left: 500px;
-  top: 315px;
+/*  left: 500px;*/
+/*  top: 315px;*/
   -webkit-filter: drop-shadow(5px 5px 5px #222);
   filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.25));
 }
@@ -163,11 +177,11 @@ h4 {
 #blog {
   background: none;
   border: none;
-  position: absolute;
+/*  position: absolute;*/
   width: 84px;
   height: 53px;
-  left: 1160px;
-  top: 400px;
+/*  left: 1160px;*/
+/*  top: 400px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
@@ -187,11 +201,11 @@ h4 {
 #projects {
   background: none;
   border: none;
-  position: absolute;
+/*  position: absolute;*/
   width: 153px;
   height: 49px;
-  left: 1170px;
-  top: 465px;
+/*  left: 1170px;*/
+/*  top: 465px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
@@ -212,11 +226,11 @@ h4 {
 #languages {
   background: none;
   border: none;
-  position: absolute;
+/*  position: absolute;*/
   width: 181px;
   height: 63px;
-  left: 1200px;
-  top: 530px;
+/*  left: 1200px;*/
+/*  top: 530px;*/
   font-family: 'monospace';
   font-style: normal;
   font-weight: 400;
