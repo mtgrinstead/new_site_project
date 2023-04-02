@@ -55,7 +55,7 @@ router-link {
 }
 
 body {
-  background-color: #002755;
+  background-color: #165976;
 }
 
 h2 {
@@ -91,7 +91,7 @@ h2 {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   overflow: auto;
   scrollbar-width: thin;
-  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-color: #165976 #e0e0e0;
   padding: 1rem;
   max-height: 420px;
 /*  overflow-y: auto;*/
@@ -146,8 +146,8 @@ h4 {
  position: absolute;
   width: 30px;
   height: 30px;
- left: 995px;
- top: 30px;
+  left: 995px;
+  top: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
@@ -155,14 +155,14 @@ h4 {
  position: absolute;
   width: 30px;
   height: 30px;
- left: 963px;
- top: 30px;
+  left: 963px;
+  top: 30px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-#at_logo:hover {
+/* #at_logo:hover {
   background-color: #6969dd;
   border-radius: 50px;
-}
+} */
 
 #LinkedIn_logo {
  position: absolute;
